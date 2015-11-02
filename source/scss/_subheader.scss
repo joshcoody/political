@@ -15,6 +15,7 @@
     padding-left: 2.5%;
     position: relative;
     width: 100%;
+    z-index: 1;
     @media screen and (max-width: $large-desktop) {
       margin-left: 0;
       padding-left: 0;
@@ -23,9 +24,9 @@
       box-shadow: none;
     }
     &:before {
-      border-color: rgba(0, 0, 0, 0) #8e0006 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
       border-style: solid;
       border-width: 0 17.8pt 7pt 0;
+      border-color: transparent #8e0006 transparent transparent;
       bottom: -6.5pt;
       content: '';
       height: 0;
@@ -33,6 +34,11 @@
       position: absolute;
       width: 0;
       z-index: -1;
+      width: 0;
+      height: 0;
+      @media screen and (max-width: $large-desktop) {
+        display: none;
+      }
     }
     #offer {
       color: #ffffff;

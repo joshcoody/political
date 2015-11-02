@@ -32,13 +32,16 @@
       font-size: 13.5pt;
       margin: 0 6pt;
       vertical-align: middle;
+      @media screen and (max-width: 420px) {
+        @include vw('font-size', 4.28);
+      }
     }
   }
   #archive {
     order: 1;
     width: 305px;
     @media screen and (max-width: $tablet) {
-      margin: 10pt auto;
+      margin: 10pt auto 0;
       width: 80%;
     }
     .label {

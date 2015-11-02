@@ -1,3 +1,45 @@
 #footer {
   background: linear-gradient(to bottom, #003d6b 0%, #005595 100%);
+  padding: 10pt;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  #logo {
+    @media screen and (max-width: 420px) {
+      img {
+        width: 34.1%;
+      }
+      .text {
+        @include vw('font-size', 4.75);
+      }
+    }
+  }
+  .social {
+    max-width: 300.5px;
+    #share {
+      margin-bottom: 15pt;
+      @media screen and (max-width: $tablet) {
+        margin-bottom: 0pt; 
+      }
+      .label {
+        color: #fff;
+        display: block;
+        font-family: 'Open Sans',arial,sans-serif;
+        font-size: 10pt;
+        line-height: 1;
+        padding-bottom: 1.9pt;
+        text-transform: uppercase;
+      }
+      a {
+        margin-right: 4pt;
+      }
+    }
+    #optin {
+      width: 100%;
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
+    }
+  }
 }

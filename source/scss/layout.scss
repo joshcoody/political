@@ -4,4 +4,6 @@ body {
   background-color: #005595;
 }
 
-@import 'header';
+#header, #content, #footer {
+  display: none;
+}

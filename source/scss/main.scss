@@ -7,6 +7,10 @@ body {
   font-size: 0;
 }
 
+#header, #content, #footer {
+  display: block;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: $desktop;
@@ -19,6 +23,7 @@ body {
   }
 }
 
+@import 'header';
 @import 'logo';
 @import 'subheader';
 @import 'optin';

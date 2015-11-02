@@ -1,4 +1,14 @@
 <footer id="footer">
-  {% include "logo.html" %}
-  {% include "optin.html" %}
+  <div class="wrapper">
+    {% include "logo.html" %}
+    <aside class="social">
+      <div id="share">
+        <label class="label">Share Us</label>
+        <a href="http://www.facebook.com/share.php?u=[URL]&title=[TITLE]" target="_blank"><img src="images/facebook.min.png"></a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=[URL]&title=[TITLE]&source=[SOURCE/DOMAIN]" target="_blank"><img src="images/linkedin.min.png"></a>
+        <a href="http://twitter.com/intent/tweet?status=[TITLE]+[URL]" target="_blank"><img src="images/twitter.min.png"></a>
+      </div>
+      {% include "optin.html" %}
+    </aside>
+  </div>
 </footer>
