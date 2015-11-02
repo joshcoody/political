@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+<body>
+  {% include "header.html" %}
+  <section id="content">
+    <div class="wrapper">
+      {% include "subheader.html" %}
+      {% include "survey-wrapper.html" %}
+      <div id="survey-results">
+        <div class="headline-wrapper">
+          <span class="redline"></span>
+          <div class="headline">Survey Poll Results: <span class="blue">10/15/2015</span></div>
+          <span class="blueline"></span>
+        </div>
+        <div id="graphs"></div>
+      </div>
+    </div>
+  </section>
+  {% include "footer.html" %}
+  <script>
+    {% include "js/async-css.js" %}
+    {% include "js/resize.js" %}
+  </script>
+  <script src="http://i.pcp003.com/assets/modernizr-css_vwunit.min.js"></script>
+</body>
+</html>

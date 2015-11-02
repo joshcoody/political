@@ -1,0 +1,71 @@
+#subheader {
+  background: url(../images/flag.min.jpg) top center no-repeat;
+  border-bottom: 8px solid #b80b12;
+  font-family: 'Open Sans', arial, sans-serif;
+  padding: 3.6% 0;
+  @media screen and (max-width: $tablet) {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  #banner {
+    background-color: #cc141c;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.17);
+    font-size: 0;
+    margin-left: -2.5%;
+    padding-left: 2.5%;
+    position: relative;
+    width: 100%;
+    @media screen and (max-width: $large-desktop) {
+      margin-left: 0;
+      padding-left: 0;
+    }
+    @media screen and (max-width: $tablet) {
+      box-shadow: none;
+    }
+    &:before {
+      border-color: rgba(0, 0, 0, 0) #8e0006 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+      border-style: solid;
+      border-width: 0 17.8pt 7pt 0;
+      bottom: -6.5pt;
+      content: '';
+      height: 0;
+      left: 0;
+      position: absolute;
+      width: 0;
+      z-index: -1;
+    }
+    #offer {
+      color: #ffffff;
+      cursor: default;
+      display: inline-block;
+      font-size: 26pt;
+      font-weight: 800;
+      line-height: 1.1;
+      padding: 0.9% 0%;
+      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.32);
+      text-transform: uppercase;
+      user-select: none;
+      vertical-align: middle;
+      width: 62.5%;
+      @media screen and (max-width: $large-desktop) {
+        padding: 0.9% 0% 0.9% 1.8%;
+      }
+      @media screen and (max-width: $desktop) {
+        @include vw('font-size', 3.77);
+      }
+      @media screen and (max-width: $tablet) {
+        @include vw('font-size', 5);
+        padding: 0.9%;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    #optin {
+      background-color: #004d87;
+      display: inline-block;
+      padding: 2%;
+      vertical-align: middle;
+      width: 37.5%;
+    }
+  }
+}

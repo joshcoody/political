@@ -1,0 +1,36 @@
+#survey-results {
+  font-family: 'Open Sans', arial, sans-serif;
+  .headline-wrapper {
+    align-items: center;
+    display: flex;
+    font-size: 23pt;
+    justify-content: center;
+    letter-spacing: -0.1px;
+    padding: 8pt 5%;
+    @media screen and (max-width: $tablet) {
+      @include vw('font-size', 4.5);
+    }
+    .redline {
+      border-top: 2px solid #cc141c;
+      flex: 1;
+      line-height: 1em;
+    }
+    .headline {
+      color: #cc141c;
+      font-weight: 800;
+      margin: 0px 7pt;
+      text-transform: uppercase;
+      .blue {
+        color: #005390;
+      }
+    }
+    .blueline {
+      border-top: 2px solid #005390;
+      flex: 1;
+      line-height: 1em;
+    }
+  }
+  #graphs {
+    min-height: 500px;
+  }
+}

@@ -1,0 +1,37 @@
+#logo {
+  cursor: default;
+  user-select: none;
+  @media screen and (max-width: $mobile) {
+    text-align: center;
+  }
+  img {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3.5pt;
+  }
+  .text {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 15pt;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    transform: translateY(-1.5pt);
+    vertical-align: top;
+    white-space: pre-line;
+  }
+  .large {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 900;
+  }
+  .small {
+    font-family: 'Lato', sans-serif;
+    font-size: 52%;
+    font-weight: 300;
+    letter-spacing: 0.8pt;
+    padding-top: 1.5pt;
+    strong {
+      font-weight: 800;
+    }
+  }
+}
