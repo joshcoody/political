@@ -22,7 +22,7 @@ var files = {
     'destination': './source/css'
   },
   'css': {
-    'source': 'source/css/*.css',
+    'source': ['source/css/*.css', '!source/css/inline.css'],
     'destination': './app/css/'
   },
   'js': {

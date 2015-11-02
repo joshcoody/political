@@ -32,7 +32,7 @@
       font-size: 13.5pt;
       margin: 0 6pt;
       vertical-align: middle;
-      @media screen and (max-width: 420px) {
+      @media screen and (max-width: $small) {
         @include vw('font-size', 4.28);
       }
     }
@@ -46,43 +46,20 @@
     }
     .label {
       color: #005390;
-      display: block;
-      font-family: 'Open Sans', arial, sans-serif;
       font-size: 10.5pt;
       font-weight: 700;
-      line-height: 1;
-      padding-bottom: 1.9pt;
-      text-transform: uppercase;
       @media screen and (max-width: $tablet) {
         display: none;
       }
     }
-    .field {
-      background: #ffffff;
-      border: 1px solid #003259;
+    .field-wrap {
       #archive-dropdown {
-        background-color: #ffffff;
-        border: 0;
-        display: inline-block;
-        font-size: 14pt;
         height: 39px;
-        outline-color: transparent;
         padding: 6pt 4pt;
-        vertical-align: middle;
         width: 72.525%;
       }
       button {
-        background-color: #cc141c;
-        border: 0;
-        box-shadow: inset 0px 0px 0px 1px #9d0007;
-        display: inline-block;
-        color: #ffffff;
-        font-size: 10.3pt;
-        font-weight: 700;
         height: 39px;
-        text-transform: uppercase;
-        vertical-align: middle;
-        width: 27.475%;
       }
     }
   }

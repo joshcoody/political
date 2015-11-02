@@ -6,7 +6,7 @@
     justify-content: space-between;
   }
   #logo {
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $small) {
       img {
         width: 34.1%;
       }
@@ -20,16 +20,10 @@
     #share {
       margin-bottom: 15pt;
       @media screen and (max-width: $tablet) {
-        margin-bottom: 0pt; 
+        margin-bottom: 0pt;
       }
       .label {
-        color: #fff;
-        display: block;
-        font-family: 'Open Sans',arial,sans-serif;
-        font-size: 10pt;
-        line-height: 1;
-        padding-bottom: 1.9pt;
-        text-transform: uppercase;
+        color: #ffffff;
       }
       a {
         margin-right: 4pt;
