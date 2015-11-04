@@ -1,0 +1,126 @@
+{
+  "type": "leadingPolls",
+  "title": "Who is leading the polls?",
+  "categories": {
+    "Republican": {
+      "header": "Republican Candidates",
+      "color": "#cf2630",
+      "candidates": [{
+        "picture": "../images/trump.min.png",
+        "name": "Donald Trump",
+        "percent": 20.1,
+        "change": 0
+      }, {
+        "picture": "../images/huckabee.min.png",
+        "name": "Mike Huckabee",
+        "percent": 0.6,
+        "change": 0
+      }, {
+        "picture": "../images/carson.min.png",
+        "name": "Ben Carson",
+        "percent": 6.1,
+        "change": 0
+      }, {
+        "picture": "../images/bush.min.png",
+        "name": "Jeb Bush",
+        "percent": 2.9,
+        "change": 0
+      }, {
+        "picture": "../images/rubio.min.png",
+        "name": "Marco Rubio",
+        "percent": 1.1,
+        "change": 0
+      }, {
+        "picture": "../images/cruz.min.png",
+        "name": "Ted Cruz",
+        "percent": 1.0,
+        "change": 0
+      }, {
+        "picture": "../images/fiorina.min.png",
+        "name": "Carly Fiorina",
+        "percent": 0.6,
+        "change": 0
+      }, {
+        "picture": "../images/paul.min.png",
+        "name": "Rand Paul",
+        "percent": 0.5,
+        "change": 0
+      }, {
+        "picture": "../images/christie.min.png",
+        "name": "Chris Christie",
+        "percent": 0.4,
+        "change": 0
+      }, {
+        "picture": "../images/kasich.min.png",
+        "name": "John Kasich",
+        "percent": 0.1,
+        "change": 0
+      }, {
+        "picture": "../images/gilmore.min.png",
+        "name": "Jim Gilmore",
+        "percent": 0.1,
+        "change": 0
+      }, {
+        "picture": "../images/pataki.min.png",
+        "name": "George Pataki",
+        "percent": 0,
+        "change": 0
+      }, {
+        "picture": "../images/santorum.min.png",
+        "name": "Rick Santorum",
+        "percent": 0.1,
+        "change": 0
+      }, {
+        "picture": "../images/graham.min.png",
+        "name": "Lindsey Graham",
+        "percent": 0.1,
+        "change": 0
+      }, {
+        "picture": "../images/jindal.min.png",
+        "name": "Bobby Jindal",
+        "percent": 0,
+        "change": 0
+      }]
+    },
+    "Democratic": {
+      "header": "Democratic Candidates",
+      "color": "#1b4f89",
+      "candidates": [{
+        "picture": "../images/clinton.min.png",
+        "name": "Hillary Clinton",
+        "percent": 39.0,
+        "change": 0
+      }, {
+        "picture": "../images/sanders.min.png",
+        "name": "Bernie Sanders",
+        "percent": 5.2,
+        "change": 0
+      }, {
+        "picture": "../images/biden.min.png",
+        "name": "Joe Biden",
+        "percent": 6.3,
+        "change": 0
+      }, {
+        "picture": "../images/omalley.min.png",
+        "name": "Martin O'Malley",
+        "percent": 0.1,
+        "change": 0
+      }, {
+        "picture": "../images/lessig.min.png",
+        "name": "Lawrence Lessig",
+        "percent": 0.1,
+        "change": 0
+      }, {
+        "picture": "../images/chafee.min.png",
+        "name": "Lincoln Chafee",
+        "percent": 0,
+        "change": 0
+      }, {
+        "picture": "../images/webb.min.png",
+        "name": "Jim Webb",
+        "percent": 0.1,
+        "change": 0
+      }]
+    }
+  }
+}

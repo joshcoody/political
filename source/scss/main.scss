@@ -35,6 +35,7 @@ body {
 .field-wrap {
   background: #ffffff;
   border: 1px solid #003259;
+  overflow: hidden;
   white-space: nowrap;
   .field {
     background-color: #ffffff;
@@ -43,6 +44,7 @@ body {
     font-size: 14pt;
     outline-color: transparent;
     vertical-align: middle;
+    appearance: none;
   }
   button {
     background-color: #cc141c;
@@ -55,14 +57,15 @@ body {
     height: 38px;
     text-transform: uppercase;
     vertical-align: middle;
-    width: 27.49%;
+    width: 28%;
   }
 }
 
 @import 'header';
 @import 'logo';
 @import 'subheader';
-@import 'optin';
+@import 'email-optin';
 @import 'survey-wrapper';
 @import 'survey-results';
 @import 'footer';
+@import 'barChart';

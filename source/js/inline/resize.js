@@ -1,4 +1,4 @@
-var optin = document.getElementById('optin');
+var optin = document.getElementsByClassName('email-optin')[0];
 var banner = document.getElementById('banner');
 var header = document.getElementById('header');
 var resize = function() {

@@ -13,6 +13,9 @@ var clip = require('gulp-clip-empty-files');
 var nunjucks = require('gulp-nunjucks-html');
 var minifyHTML = require('gulp-minify-html');
 var minifyInline = require('gulp-minify-inline');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+var streamify = require('gulp-streamify');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
@@ -26,7 +29,7 @@ var files = {
     'destination': './app/css/'
   },
   'js': {
-    'source': 'source/js/*.js',
+    'source': ['source/js/standalone-framework.js','source/js/highcharts.js', 'source/js/modules/exporting.js','source/js/fetch-promise.js','source/js/main.js'],
     'destination': './app/js'
   },
   'images': {
@@ -102,7 +105,24 @@ gulp.task('html', function() {
     }));
 });
 
+gulp.task('js', function() {
+  //return browserify(files.js.source).bundle()
+    //.pipe(source('app.js'))
+    //.pipe(streamify(uglify()))
+  return gulp.src(files.js.source)
+    //.pipe(uglify())
+    .pipe(concat('app.js'))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest(files.js.destination))
+    .pipe(reload({
+      stream: true
+    }));
+});
+
 gulp.task('watch', function() {
+  gulp.watch(files.js.source, ['js']);
   gulp.watch(files.scss.source, ['css']);
   gulp.watch(files.images.source, ['images']);
   gulp.watch(files.templates.source, ['html']);
@@ -115,4 +135,4 @@ gulp.task('serve', function() {
   });
 });
 
-gulp.task('default', ['css', 'images', 'html', 'watch', 'serve']);
+gulp.task('default', ['css', 'images', 'html', 'js', 'watch', 'serve']);

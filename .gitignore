@@ -1,4 +1,7 @@
-app
+app/css
+app/images
+app/js
+app/index.html
 favicon
 node_modules
 barchart.json
