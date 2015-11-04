@@ -28,8 +28,12 @@ var files = {
     'source': ['source/css/*.css', '!source/css/inline.css'],
     'destination': './app/css/'
   },
+  'browserify': {
+    'source': 'source/js/main.js',
+    'destination': './source/js'
+  },
   'js': {
-    'source': ['source/js/standalone-framework.js','source/js/highcharts.js', 'source/js/modules/exporting.js','source/js/fetch-promise.js','source/js/main.js'],
+    'source': ['source/js/standalone-framework.js','source/js/highcharts.js', 'source/js/modules/exporting.js','source/js/fetch-promise.js','source/js/app.js'],
     'destination': './app/js'
   },
   'images': {
@@ -105,10 +109,13 @@ gulp.task('html', function() {
     }));
 });
 
-gulp.task('js', function() {
-  //return browserify(files.js.source).bundle()
-    //.pipe(source('app.js'))
-    //.pipe(streamify(uglify()))
+gulp.task('browserify', function() {
+  return browserify(files.browserify.source).bundle()
+    .pipe(source('app.js'))
+    .pipe(gulp.dest(files.browserify.destination));
+});
+
+gulp.task('js', ['browserify'], function() {
   return gulp.src(files.js.source)
     //.pipe(uglify())
     .pipe(concat('app.js'))
@@ -122,7 +129,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(files.js.source, ['js']);
+  gulp.watch(files.browserify.source, ['js']);
   gulp.watch(files.scss.source, ['css']);
   gulp.watch(files.images.source, ['images']);
   gulp.watch(files.templates.source, ['html']);
