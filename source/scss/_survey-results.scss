@@ -31,7 +31,9 @@
     }
   }
   #graphs {
-    min-height: 200px;
     font-size: 20pt;
+    max-width: 100%;
+    min-height: 200px;
+    overflow: hidden;
   }
 }

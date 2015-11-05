@@ -1,0 +1,22 @@
+{
+  "type": "pieChart",
+  "week": "10-15-2015",
+  "title": "General Election Percentages",
+  "labels": [
+    {
+      "color": "#005492",
+      "name": "Democratic",
+      "percent": 43
+    },
+    {
+      "color": "#3e505c",
+      "name": "Independent",
+      "percent": 37
+    },
+    {
+      "color": "#d22229",
+      "name": "Republican",
+      "percent": 21
+    }
+  ]
+}

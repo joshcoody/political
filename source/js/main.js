@@ -10,10 +10,12 @@ var PoliticalBeat = function() {
 
   self.barChart = require('./barChart.js');
 
+  self.pieChart = require('./pieChart.js');
+
   self.leadingPolls = require('./leadingPolls.js');
 
   self.updateDate = function() {
-    date.innerHTML = archive.selectedOptions[0].innerHTML;
+    date.innerHTML = archive.options[archive.selectedIndex].innerHTML;
     graphs.innerHTML = "";
   };
 
@@ -24,11 +26,13 @@ var PoliticalBeat = function() {
         self.load(archive.value + '/' + data.types[i]).then(function(response) {
           self[response.type](response);
         }).catch(function(error) {
-          console.warn("File Not Found", error);
+          //console.warn("File Not Found", error);
+          console.error(error);
         });
       }
     }).catch(function(error) {
-      console.warn("File Not Found", error);
+      //console.warn("File Not Found", error);
+      console.error(error);
     })
   });
 

@@ -1,0 +1,122 @@
+.leadingPolls {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  .title {
+    font-size: 23pt;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+    color: #414141;
+  }
+  .columns {
+    display: flex;
+    justify-content: center;
+  }
+  .column {
+    margin: 0.9%;
+    width: 40.3%;
+    &#Democratic {
+      $color: #1b4f89;
+      color: $color;
+      .picture, .percent {
+        background: $color;
+      }
+    }
+    &#Republican {
+      $color: #cf2630;
+      color: $color;
+      .picture, .percent {
+        background: $color;
+      }
+    }
+    .header .icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .header .text {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 15.5pt;
+      letter-spacing: -0.5px;
+      font-weight: 800;
+    }
+    .candidate {
+      background: linear-gradient(to bottom, #e2e2e2 0%, #fefffe 100%);
+      border: 1px solid #c5c5c4;
+      font-size: 0;
+      margin: 5pt 0pt;
+      padding: 5pt 3pt;
+      text-align: left;
+      &.dropped {
+        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+        filter: grayscale(1);
+      }
+      .picture {
+        border-radius: 100%;
+        display: inline-block;
+        margin-right: 1.5%;
+        padding: 3.5pt;
+        vertical-align: middle;
+        width: 17.3%;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      .name {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 11pt;
+        width: 43.7%;
+      }
+      .percent {
+        border-radius: 100%;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 11pt;
+        min-height: 62px;
+        line-height: 62px;
+        text-align: center;
+        vertical-align: middle;
+        width: 62px;
+      }
+      .change {
+        color: #666666;
+        display: inline-block;
+        margin-left: 2%;
+        vertical-align: middle;
+        &.green {
+          color: #3a9544;
+          .arrow {
+            margin: 0pt;
+            transform: rotate(90deg);
+            width: 18pt;
+          }
+        }
+        &.red {
+          color: #d41920;
+          .arrow {
+            margin: 0pt;
+            transform: rotate(-90deg);
+            width: 18pt;
+          }
+        }
+        .arrow {
+          display: inline-block;
+          margin: 0 1.5pt;
+          transform-origin: center;
+          vertical-align: middle;
+          width: 16pt;
+          svg {
+            width: 100%;
+          }
+        }
+        &-percent {
+          display: inline-block;
+          font-size: 11pt;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

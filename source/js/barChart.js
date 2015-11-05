@@ -1,21 +1,28 @@
 module.exports = function(json) {
   var elem = document.createElement('div');
   elem.className = "barChart";
-  elem.id = 'barChart_' + archive.value;
+  elem.id = 'barChart_' + json.week;
   graphs.appendChild(elem);
   var config = {
     colors: [],
     chart: {
       type: 'bar',
-      renderTo: 'barChart_' + archive.value,
+      renderTo: elem.id,
       width: graphs.clientWidth
     },
     title: {
-      text: json.title
+      text: json.title,
+      style: {
+        "color": "#414141",
+        "font-family": "'Open Sans', arial, sans-serif",
+        "font-size": "30.6667px",
+        "font-weight": "800",
+        "text-transform": "uppercase",
+      }
     },
-    subtitle: {
+    /*subtitle: {
       text: json.subtitle
-    },
+    },*/
     xAxis: {
       categories: json.categories,
       title: {
@@ -44,7 +51,7 @@ module.exports = function(json) {
     legend: {
       align: 'center',
       verticalAlign: 'top',
-      y: window.innerWidth < 640 ? 100 : 60,
+      y: 40,
     },
     credits: {
       enabled: false

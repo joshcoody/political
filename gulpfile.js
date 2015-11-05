@@ -14,6 +14,7 @@ var nunjucks = require('gulp-nunjucks-html');
 var minifyHTML = require('gulp-minify-html');
 var minifyInline = require('gulp-minify-inline');
 var browserify = require('browserify');
+var babel = require("gulp-babel");
 var source = require('vinyl-source-stream');
 var streamify = require('gulp-streamify');
 var browserSync = require('browser-sync');
@@ -30,6 +31,10 @@ var files = {
   },
   'browserify': {
     'source': 'source/js/main.js',
+    'destination': './source/js'
+  },
+  'babel': {
+    'source': 'source/js/leadingPolls.babel',
     'destination': './source/js'
   },
   'js': {
@@ -109,13 +114,20 @@ gulp.task('html', function() {
     }));
 });
 
+gulp.task('babel', function() {
+  return gulp.src(files.babel.source)
+    .pipe(babel())
+    .pipe(rename('leadingPolls.js'))
+    .pipe(gulp.dest(files.babel.destination));
+});
+
 gulp.task('browserify', function() {
   return browserify(files.browserify.source).bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest(files.browserify.destination));
 });
 
-gulp.task('js', ['browserify'], function() {
+gulp.task('js', ['babel', 'browserify'], function() {
   return gulp.src(files.js.source)
     //.pipe(uglify())
     .pipe(concat('app.js'))

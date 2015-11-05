@@ -1,124 +1,130 @@
 {
   "type": "leadingPolls",
+  "week": "10-15-2015",
   "title": "Who is leading the polls?",
   "categories": {
-    "Republican": {
-      "header": "Republican Candidates",
-      "color": "#cf2630",
-      "candidates": [{
-        "picture": "../images/trump.min.png",
-        "name": "Donald Trump",
-        "percent": 20.1,
-        "change": 0
-      }, {
-        "picture": "../images/huckabee.min.png",
-        "name": "Mike Huckabee",
-        "percent": 0.6,
-        "change": 0
-      }, {
-        "picture": "../images/carson.min.png",
-        "name": "Ben Carson",
-        "percent": 6.1,
-        "change": 0
-      }, {
-        "picture": "../images/bush.min.png",
-        "name": "Jeb Bush",
-        "percent": 2.9,
-        "change": 0
-      }, {
-        "picture": "../images/rubio.min.png",
-        "name": "Marco Rubio",
-        "percent": 1.1,
-        "change": 0
-      }, {
-        "picture": "../images/cruz.min.png",
-        "name": "Ted Cruz",
-        "percent": 1.0,
-        "change": 0
-      }, {
-        "picture": "../images/fiorina.min.png",
-        "name": "Carly Fiorina",
-        "percent": 0.6,
-        "change": 0
-      }, {
-        "picture": "../images/paul.min.png",
-        "name": "Rand Paul",
-        "percent": 0.5,
-        "change": 0
-      }, {
-        "picture": "../images/christie.min.png",
-        "name": "Chris Christie",
-        "percent": 0.4,
-        "change": 0
-      }, {
-        "picture": "../images/kasich.min.png",
-        "name": "John Kasich",
-        "percent": 0.1,
-        "change": 0
-      }, {
-        "picture": "../images/gilmore.min.png",
-        "name": "Jim Gilmore",
-        "percent": 0.1,
-        "change": 0
-      }, {
-        "picture": "../images/pataki.min.png",
-        "name": "George Pataki",
-        "percent": 0,
-        "change": 0
-      }, {
-        "picture": "../images/santorum.min.png",
-        "name": "Rick Santorum",
-        "percent": 0.1,
-        "change": 0
-      }, {
-        "picture": "../images/graham.min.png",
-        "name": "Lindsey Graham",
-        "percent": 0.1,
-        "change": 0
-      }, {
-        "picture": "../images/jindal.min.png",
-        "name": "Bobby Jindal",
-        "percent": 0,
-        "change": 0
-      }]
-    },
     "Democratic": {
       "header": "Democratic Candidates",
+      "icon": "images/democratic_icon.min.png",
       "color": "#1b4f89",
       "candidates": [{
-        "picture": "../images/clinton.min.png",
+        "picture": "images/hclinton.min.png",
         "name": "Hillary Clinton",
         "percent": 39.0,
-        "change": 0
+        "change": 2.9
       }, {
-        "picture": "../images/sanders.min.png",
+        "picture": "images/bsanders.min.png",
         "name": "Bernie Sanders",
         "percent": 5.2,
-        "change": 0
+        "change": -2
       }, {
-        "picture": "../images/biden.min.png",
+        "picture": "images/jbiden.min.png",
         "name": "Joe Biden",
         "percent": 6.3,
-        "change": 0
+        "change": 0,
+        "dropped": true
       }, {
-        "picture": "../images/omalley.min.png",
+        "picture": "images/momalley.min.png",
         "name": "Martin O'Malley",
         "percent": 0.1,
         "change": 0
       }, {
-        "picture": "../images/lessig.min.png",
+        "picture": "images/llessig.min.png",
         "name": "Lawrence Lessig",
         "percent": 0.1,
         "change": 0
       }, {
-        "picture": "../images/chafee.min.png",
+        "picture": "images/lchafee.min.png",
         "name": "Lincoln Chafee",
+        "percent": 0,
+        "change": 0,
+        "dropped": true
+      }, {
+        "picture": "images/jwebb.min.png",
+        "name": "Jim Webb",
+        "percent": 0.1,
+        "change": 0,
+        "dropped": true
+      }]
+    },
+    "Republican": {
+      "header": "Republican Candidates",
+      "icon": "images/republican_icon.min.png",
+      "color": "#cf2630",
+      "candidates": [{
+        "picture": "images/dtrump.min.png",
+        "name": "Donald Trump",
+        "percent": 20.1,
+        "change": 0
+      }, {
+        "picture": "images/mhuckabee.min.png",
+        "name": "Mike Huckabee",
+        "percent": 0.6,
+        "change": 0
+      }, {
+        "picture": "images/bcarson.min.png",
+        "name": "Ben Carson",
+        "percent": 6.1,
+        "change": 0
+      }, {
+        "picture": "images/jbush.min.png",
+        "name": "Jeb Bush",
+        "percent": 2.9,
+        "change": 0
+      }, {
+        "picture": "images/mrubio.min.png",
+        "name": "Marco Rubio",
+        "percent": 1.1,
+        "change": 0
+      }, {
+        "picture": "images/tcruz.min.png",
+        "name": "Ted Cruz",
+        "percent": 1.0,
+        "change": 0
+      }, {
+        "picture": "images/cfiorina.min.png",
+        "name": "Carly Fiorina",
+        "percent": 0.6,
+        "change": 0
+      }, {
+        "picture": "images/rpaul.min.png",
+        "name": "Rand Paul",
+        "percent": 0.5,
+        "change": 0
+      }, {
+        "picture": "images/cchristie.min.png",
+        "name": "Chris Christie",
+        "percent": 0.4,
+        "change": 0
+      }, {
+        "picture": "images/jkasich.min.png",
+        "name": "John Kasich",
+        "percent": 0.1,
+        "change": 0
+      }, {
+        "picture": "images/jgilmore.min.png",
+        "name": "Jim Gilmore",
+        "percent": 0.1,
+        "change": 0
+      }, {
+        "picture": "images/gpataki.min.png",
+        "name": "George Pataki",
         "percent": 0,
         "change": 0
       }, {
-        "picture": "../images/webb.min.png",
-        "name": "Jim Webb",
+        "picture": "images/rsantorum.min.png",
+        "name": "Rick Santorum",
         "percent": 0.1,
+        "change": 0
+      }, {
+        "picture": "images/lgraham.min.png",
+        "name": "Lindsey Graham",
+        "percent": 0.1,
+        "change": 0
+      }, {
+        "picture": "images/bjindal.min.png",
+        "name": "Bobby Jindal",
+        "percent": 0,
         "change": 0
       }]
     }
