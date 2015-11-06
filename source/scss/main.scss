@@ -24,45 +24,49 @@ body {
   }
 }
 
-.label {
-  display: block;
-  font-family: 'Open Sans',arial,sans-serif;
-  font-size: 10pt;
+.headline {
+  color: #cc141c;
+  font-weight: 800;
+  margin: 0 7pt 22pt;
   line-height: 1;
-  padding-bottom: 1.9pt;
+  text-align: center;
   text-transform: uppercase;
-}
-.field-wrap {
-  background: #ffffff;
-  border: 1px solid #003259;
-  overflow: hidden;
-  white-space: nowrap;
-  .field {
-    background-color: #ffffff;
-    border: 0;
-    display: inline-block;
-    font-size: 14pt;
-    outline-color: transparent;
-    vertical-align: middle;
-    appearance: none;
-  }
-  button {
-    background-color: #cc141c;
-    border: 0;
-    box-shadow: inset 0px 0px 0px 1px #9d0007;
-    display: inline-block;
-    color: #ffffff;
-    font-size: 10.3pt;
-    font-weight: 700;
-    height: 38px;
-    text-transform: uppercase;
-    vertical-align: middle;
-    width: 28%;
+  .blue {
+    color: #005390;
   }
 }
 
+.title {
+  color: #414141;
+  font-size: 23pt;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: -1px;
+  @media screen and (max-width: $mobile) {
+    @include vw('font-size', 5.69);
+  }
+}
+
+.divider {
+  background: url(../images/divider_bar.min.png) center left repeat-x;
+  margin: 20pt auto 0pt;
+  text-align: center;
+  img {
+    width: 52pt;
+  }
+  &.highlight {
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 60pt;
+    }
+  }
+}
 @import 'header';
 @import 'logo';
+@import 'field';
 @import 'subheader';
 @import 'email-optin';
 @import 'survey-wrapper';

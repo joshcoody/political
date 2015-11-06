@@ -1,7 +1,14 @@
 module.exports = function(json) {
   var elem = document.createElement('div');
   elem.className = "pieChart";
-  elem.id = 'pieChart_' + json.week;
+  var title = document.createElement('div');
+  title.className = 'title';
+  title.innerHTML = json.title;
+  var chartWrapper = document.createElement('div');
+  chartWrapper.className = 'chart_wrapper';
+  chartWrapper.id = 'pieChart_' + json.week;
+  elem.appendChild(title);
+  elem.appendChild(chartWrapper);
   graphs.appendChild(elem);
   var colors = [];
   var config = {
@@ -10,25 +17,17 @@ module.exports = function(json) {
       plotBorderWidth: null,
       plotShadow: false,
       type: 'pie',
-      renderTo: elem.id
+      renderTo: chartWrapper.id
     },
     credits: {
       enabled: false
     },
     title: {
-      text: json.title,
-      style: {
-        "color": "#414141",
-        "font-family": "'Open Sans', arial, sans-serif",
-        "font-size": "30.6667px",
-        "font-weight": "800",
-        "text-transform": "uppercase"
-      }
+      text: null
     },
     legend: {
       align: 'center',
-      verticalAlign: 'top',
-      y: 40,
+      verticalAlign: 'top'
     },
     tooltip: {
       pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -71,4 +70,7 @@ module.exports = function(json) {
     );
   }
   var chart = new Highcharts.Chart(config);
+  setTimeout(function() {
+    chart.reflow();
+  }, 100);
 };

@@ -1,0 +1,20 @@
+{
+  "type": "columnChart",
+  "week": "10-15-2015",
+  "title": "Swing States",
+  "categories": ["Colorado", "Florida", "Iowa", "New Hampshire", "Nevada", "Ohio", "Virginia"],
+  "labels": {
+    "Democratic": {
+      "color": "#005492",
+      "data": [24, 49, 29, 33, 38, 35, 37]
+    },
+    "Independent": {
+      "color": "#3e505c",
+      "data": [52, 29, 57, 50, 31, 51, 46]
+    },
+    "Republican": {
+      "color": "#d22229",
+      "data": [24, 22, 14, 17, 31, 14, 17]
+    }
+  }
+}

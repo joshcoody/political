@@ -1,19 +1,19 @@
 module.exports = function(json) {
   var elem = document.createElement('div');
-  elem.className = "barChart";
+  elem.className = "columnChart";
   var title = document.createElement('div');
   title.className = 'title';
   title.innerHTML = json.title;
   var chartWrapper = document.createElement('div');
   chartWrapper.className = 'chart_wrapper';
-  chartWrapper.id = 'barChart_' + json.week;
+  chartWrapper.id = 'columnChart_' + json.week;
   elem.appendChild(title);
   elem.appendChild(chartWrapper);
   graphs.appendChild(elem);
   var config = {
     colors: [],
     chart: {
-      type: 'bar',
+      type: 'column',
       renderTo: chartWrapper.id
     },
     title: {
@@ -28,8 +28,7 @@ module.exports = function(json) {
     yAxis: {
       min: null,
       title: {
-        text: null,
-        align: 'high'
+        text: 'Party Affiliation %'
       },
       labels: {
         overflow: 'justify',

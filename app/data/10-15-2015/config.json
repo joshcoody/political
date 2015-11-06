@@ -1,3 +1,3 @@
 {
-  "types": ["pieChart", "leadingPolls", "barChart"]
+  "types": ["columnChart", "pieChart", "leadingPolls", "barChart"]
 }

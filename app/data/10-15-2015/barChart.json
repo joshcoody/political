@@ -2,7 +2,6 @@
   "type": "barChart",
   "week": "10-15-2015",
   "title": "Most important issues",
-  "subtitle": "(BY POLITICAL PARTY)",
   "categories": ["Economy", "Health Care", "Unemployment/Lack of Jobs", "Pro Choice/Pro Life", "Education", "Climate Change", "Social Security", "Foreign Policy/Terrorism", "Immigration", "Gun Control", "Other"],
   "labels": {
     "Democratic": {

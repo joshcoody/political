@@ -12,6 +12,8 @@ var PoliticalBeat = function() {
 
   self.pieChart = require('./pieChart.js');
 
+  self.columnChart = require('./columnChart.js');
+
   self.leadingPolls = require('./leadingPolls.js');
 
   self.updateDate = function() {
@@ -22,9 +24,19 @@ var PoliticalBeat = function() {
   viewButton.addEventListener('click', function() {
     self.load(archive.value + '/config').then(function(data) {
       self.updateDate();
+      var count = 0;
       for (var i = 0, len = data.types.length; i < len; i++) {
         self.load(archive.value + '/' + data.types[i]).then(function(response) {
+          var html = '';
+          if(count === 0) {
+            html = '<div class="divider highlight"><img src="images/divider_icon_highlight.min.png"></div>';
+            html += '<div class="headline">Spotlight <span class="blue">Survey Poll</span></div>';
+          } else {
+            html = '<div class="divider"><img src="images/divider_icon.min.png"></div>';
+          }
+          graphs.insertAdjacentHTML( 'beforeend', html);
           self[response.type](response);
+          count++;
         }).catch(function(error) {
           //console.warn("File Not Found", error);
           console.error(error);
