@@ -45,7 +45,13 @@ module.exports = function(json) {
     },
     legend: {
       align: 'center',
-      verticalAlign: 'top'
+      verticalAlign: 'top',
+      itemStyle: {
+        color: '#414141',
+        fontFamily: 'Open Sans',
+        fontSize: '15px',
+        fontWeight: '800'
+      }
     },
     credits: {
       enabled: false

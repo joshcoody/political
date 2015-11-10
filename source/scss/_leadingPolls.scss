@@ -1,14 +1,21 @@
 .leadingPolls {
+  $break: 680px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
   .columns {
     display: flex;
     justify-content: center;
+    @media screen and (max-width: $break) {
+      display: block;
+    }
   }
   .column {
     margin: 0.9%;
     width: 40.3%;
+    @media screen and (max-width: $break) {
+      width: 98.2%;
+    }
     &#Democratic {
       $color: #1b4f89;
       color: $color;
@@ -38,14 +45,23 @@
       font-size: 15.5pt;
       letter-spacing: -0.5px;
       font-weight: 800;
+      @media screen and (max-width: 800px) and (min-width: $break)  {
+        @include vw('font-size', 2.58);
+      }
+      @media screen and (max-width: $small) {
+        @include vw('font-size', 4.92);
+      }
     }
     .candidate {
+      align-items: center;
       background: linear-gradient(to bottom, #e2e2e2 0%, #fefffe 100%);
       border: 1px solid #c5c5c4;
+      display: flex;
       font-size: 0;
       margin: 5pt 0pt;
       padding: 5pt 3pt;
       text-align: left;
+      white-space: nowrap;
       &.dropped {
         filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
         filter: grayscale(1);
@@ -54,9 +70,10 @@
         border-radius: 100%;
         display: inline-block;
         margin-right: 1.5%;
-        padding: 3.5pt;
+        padding: 3pt;
         vertical-align: middle;
-        width: 17.3%;
+        //width: 17.3%;
+        width: 62px;
         img {
           display: block;
           width: 100%;
@@ -65,14 +82,13 @@
       .name {
         display: inline-block;
         vertical-align: middle;
-        font-size: 11pt;
-        width: 43.7%;
+        white-space: normal;
+        flex: 1;
       }
       .percent {
         border-radius: 100%;
         color: #ffffff;
         display: inline-block;
-        font-size: 11pt;
         min-height: 62px;
         line-height: 62px;
         text-align: center;
@@ -82,7 +98,7 @@
       .change {
         color: #666666;
         display: inline-block;
-        margin-left: 2%;
+        margin: 0 2%;
         vertical-align: middle;
         &.green {
           color: #3a9544;
@@ -115,8 +131,16 @@
         }
         &-percent {
           display: inline-block;
-          font-size: 11pt;
           vertical-align: middle;
+        }
+      }
+      .name, .percent, .change-percent {
+        font-size: 11pt;
+        @media screen and (max-width: 800px) {
+          @include vw('font-size', 1.9);
+        }
+        @media screen and (max-width: $break) {
+          font-size: 11pt;
         }
       }
     }

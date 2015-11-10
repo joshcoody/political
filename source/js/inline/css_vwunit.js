@@ -13,6 +13,7 @@ function vwResize() {
   document.getElementById("htmlFontSize").innerText = "html { font-size: " + ww + "px!important; }";
 }
 if (!vwSupport()) {
+  document.getElementsByTagName("html")[0].className = 'novw';
   if (!document.getElementById("htmlFontSize")) {
     var style = document.createElement("style");
     style.id = "htmlFontSize";

@@ -27,7 +27,13 @@ module.exports = function(json) {
     },
     legend: {
       align: 'center',
-      verticalAlign: 'top'
+      verticalAlign: 'top',
+      itemStyle: {
+        color: '#414141',
+        fontFamily: 'Open Sans',
+        fontSize: '15px',
+        fontWeight: '800'
+      }
     },
     tooltip: {
       pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -37,7 +43,14 @@ module.exports = function(json) {
         allowPointSelect: true,
         cursor: 'pointer',
         dataLabels: {
-          enabled: false
+          enabled: true,
+          format: '{point.percentage:.1f}%',
+          style: {
+            color: '#414141',
+            fontFamily: 'Open Sans',
+            fontSize: '20px',
+            fontWeight: '800'
+          }
         },
         showInLegend: true,
         colors: Highcharts.map(colors, function(color) {

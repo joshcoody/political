@@ -10,40 +10,33 @@
       "candidates": [{
         "picture": "images/hclinton.min.png",
         "name": "Hillary Clinton",
-        "percent": 39.0,
-        "change": -5
+        "percent": 39.0
       }, {
         "picture": "images/bsanders.min.png",
         "name": "Bernie Sanders",
-        "percent": 5.2,
-        "change": -2
+        "percent": 5.2
       }, {
         "picture": "images/jbiden.min.png",
         "name": "Joe Biden",
         "percent": 6.3,
-        "change": 0,
         "dropped": true
       }, {
         "picture": "images/momalley.min.png",
         "name": "Martin O'Malley",
-        "percent": 0.1,
-        "change": 0
+        "percent": 0.1
       }, {
         "picture": "images/llessig.min.png",
         "name": "Lawrence Lessig",
-        "percent": 0.1,
-        "change": 0
+        "percent": 0.1
       }, {
         "picture": "images/lchafee.min.png",
         "name": "Lincoln Chafee",
         "percent": 0,
-        "change": 0,
         "dropped": true
       }, {
         "picture": "images/jwebb.min.png",
         "name": "Jim Webb",
         "percent": 0.1,
-        "change": 0,
         "dropped": true
       }]
     },
@@ -54,78 +47,63 @@
       "candidates": [{
         "picture": "images/dtrump.min.png",
         "name": "Donald Trump",
-        "percent": 20.1,
-        "change": 0
+        "percent": 20.1
       }, {
         "picture": "images/mhuckabee.min.png",
         "name": "Mike Huckabee",
-        "percent": 0.6,
-        "change": 0
+        "percent": 0.6
       }, {
         "picture": "images/bcarson.min.png",
         "name": "Ben Carson",
-        "percent": 6.1,
-        "change": 0
+        "percent": 6.1
       }, {
         "picture": "images/jbush.min.png",
         "name": "Jeb Bush",
-        "percent": 2.9,
-        "change": 0
+        "percent": 2.9
       }, {
         "picture": "images/mrubio.min.png",
         "name": "Marco Rubio",
-        "percent": 1.1,
-        "change": 0
+        "percent": 1.1
       }, {
         "picture": "images/tcruz.min.png",
         "name": "Ted Cruz",
-        "percent": 1.0,
-        "change": 0
+        "percent": 1.0
       }, {
         "picture": "images/cfiorina.min.png",
         "name": "Carly Fiorina",
-        "percent": 0.6,
-        "change": 0
+        "percent": 0.6
       }, {
         "picture": "images/rpaul.min.png",
         "name": "Rand Paul",
-        "percent": 0.5,
-        "change": 0
+        "percent": 0.5
       }, {
         "picture": "images/cchristie.min.png",
         "name": "Chris Christie",
-        "percent": 0.4,
-        "change": 0
+        "percent": 0.4
       }, {
         "picture": "images/jkasich.min.png",
         "name": "John Kasich",
-        "percent": 0.1,
-        "change": 0
+        "percent": 0.1
       }, {
         "picture": "images/jgilmore.min.png",
         "name": "Jim Gilmore",
-        "percent": 0.1,
-        "change": 0
+        "percent": 0.1
       }, {
         "picture": "images/gpataki.min.png",
         "name": "George Pataki",
-        "percent": 0,
-        "change": 0
+        "percent": 0
       }, {
         "picture": "images/rsantorum.min.png",
         "name": "Rick Santorum",
-        "percent": 0.1,
-        "change": 0
+        "percent": 0.1
       }, {
         "picture": "images/lgraham.min.png",
         "name": "Lindsey Graham",
-        "percent": 0.1,
-        "change": 0
+        "percent": 0.1
       }, {
         "picture": "images/bjindal.min.png",
         "name": "Bobby Jindal",
-        "percent": 0,
-        "change": 0
+        "percent": 0
       }]
     }
   }

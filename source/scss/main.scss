@@ -31,6 +31,9 @@ body {
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
+  @media screen and (max-width: $small) {
+    @include vw('font-size', 6.4);
+  }
   .blue {
     color: #005390;
   }
