@@ -6,7 +6,7 @@ module.exports = function(json) {
   title.innerHTML = json.title;
   var chartWrapper = document.createElement('div');
   chartWrapper.className = 'chart_wrapper';
-  chartWrapper.id = 'columnChart_' + json.week;
+  chartWrapper.id = 'columnChart_' + json.title.replace(/\s/g,'-') + '_' + json.week;
   elem.appendChild(title);
   elem.appendChild(chartWrapper);
   graphs.appendChild(elem);

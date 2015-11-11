@@ -3,7 +3,7 @@ module.exports = function (json) {
 
   var elem = document.createElement('div');
   elem.className = "leadingPolls";
-  elem.id = 'leadingPolls_' + json.week;
+  elem.id = 'leadingPolls_' + json.title.replace(/\s/g, '-') + '_' + json.week;
   graphs.appendChild(elem);
   var chart = "\n    <div class=\"title\">" + json.title + "</div>\n    <div class=\"columns\">\n  ";
   var categories = json.categories;
@@ -24,6 +24,11 @@ module.exports = function (json) {
       }
       chart += "\n        </div>\n      ";
     }
+
+    if (json.independent && category === 'Democratic') {
+      chart += "\n        <div class=\"independent\">\n          <span class=\"independent-percent\">" + json.independent + "%</span>\n          <span class=\"independent-text\">Independent Respondents<br>Selected Undecided</span>\n        </div>\n      ";
+    }
+
     chart += "\n      </div>\n    ";
   }
   chart += "\n    </div>\n  ";

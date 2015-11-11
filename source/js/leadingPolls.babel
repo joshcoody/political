@@ -2,7 +2,7 @@ module.exports = function(json) {
   "use strict";
   var elem = document.createElement('div');
   elem.className = "leadingPolls";
-  elem.id = 'leadingPolls_' + json.week;
+  elem.id = 'leadingPolls_' + json.title.replace(/\s/g,'-') + '_' + json.week;
   graphs.appendChild(elem);
   var chart = `
     <div class="title">${json.title}</div>
@@ -76,6 +76,16 @@ module.exports = function(json) {
         </div>
       `;
     }
+
+    if(json.independent && category === 'Democratic') {
+      chart += `
+        <div class="independent">
+          <span class="independent-percent">${json.independent}%</span>
+          <span class="independent-text">Independent Respondents<br>Selected Undecided</span>
+        </div>
+      `;
+    }
+
     chart +=`
       </div>
     `;

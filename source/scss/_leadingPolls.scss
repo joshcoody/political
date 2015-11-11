@@ -100,6 +100,7 @@
         display: inline-block;
         margin: 0 2%;
         vertical-align: middle;
+        width: 60px;
         &.green {
           color: #3a9544;
           .arrow {
@@ -142,6 +143,37 @@
         @media screen and (max-width: $break) {
           font-size: 11pt;
         }
+      }
+    }
+    .independent {
+      color: #3e505c;
+      font-size: 11pt;
+      line-height: 1;
+      margin: 8% auto;
+      width: 90%;
+      @media screen and (min-width: 681px) and (max-width: 860px) {
+        @include vw('font-size', 1.7);
+      }
+      @media screen and (max-width: 680px) {
+        @include vw('font-size', 3);
+      }
+      @media screen and (max-width: 486px) {
+        font-size: 14.85px;
+      }
+      &-percent {
+        background: #3e505c;
+        color: white;
+        display: inline-block;
+        padding: 2pt 0 3pt;
+        vertical-align: middle;
+        width: 17%;
+      }
+      &-text {
+        display: inline-block;
+        margin-left: 2%;
+        text-align: left;
+        vertical-align: middle;
+        //width: 70%;
       }
     }
   }

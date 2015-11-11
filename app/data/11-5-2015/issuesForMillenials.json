@@ -1,20 +1,20 @@
 {
   "type": "barChart",
-  "week": "10-15-2015",
-  "title": "Issues that matter to most voters overall",
+  "week": "11-5-2015",
+  "title": "Issues that matter most to millennials",
   "categories": ["Economy", "Health Care", "Unemployment/Lack of Jobs", "Pro Choice/Pro Life", "Education", "Climate Change", "Social Security", "Foreign Policy/Terrorism", "Immigration", "Gun Control", "Other"],
   "labels": {
     "Democratic": {
       "color": "#005492",
-      "data": [16, 14, 15, 3, 11, 4, 11, 6, 6, 10, 3]
+      "data": [17, 13, 18, 3, 15, 4, 7, 5, 4, 9, 4]
     },
     "Independent": {
       "color": "#3e505c",
-      "data": [16, 13, 15, 3, 11, 3, 9, 8, 8, 8, 5]
+      "data": [15, 14, 17, 3, 16, 3, 7, 5, 7, 7, 7]
     },
     "Republican": {
       "color": "#d22229",
-      "data": [17, 12, 13, 3, 9, 2, 10, 11, 11, 7, 4]
+      "data": [16, 13, 14, 3, 13, 4, 5, 7, 10, 7, 8]
     }
   }
 }

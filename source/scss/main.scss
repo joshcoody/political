@@ -67,6 +67,29 @@ body {
     }
   }
 }
+
+#scroll-top {
+  background: rgba(65, 65, 65, 0.75);
+  bottom: 4%;
+  border-radius: 4pt;
+  cursor: pointer;
+  height: 25pt;
+  opacity: 0;
+  position: fixed;
+  right: 4%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  width: 25pt;
+  z-index: -1;
+  &.active {
+    opacity: 1;
+    z-index: 20;
+  }
+  img {
+    padding: 6pt 0;
+  }
+}
+
 @import 'header';
 @import 'logo';
 @import 'field';

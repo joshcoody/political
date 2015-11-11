@@ -1,7 +1,7 @@
 {
   "type": "columnChart",
   "week": "10-15-2015",
-  "title": "Swing States",
+  "title": "How the parties are split amongst the 2016 swing states",
   "categories": ["Colorado", "Florida", "Iowa", "New Hampshire", "Nevada", "Ohio", "Virginia"],
   "labels": {
     "Democratic": {

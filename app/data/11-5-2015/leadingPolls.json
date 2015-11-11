@@ -1,6 +1,6 @@
 {
   "type": "leadingPolls",
-  "week": "10-15-2015",
+  "week": "11-5-2015",
   "title": "Current Poll Numbers for Primary Nominations",
   "categories": {
     "Democratic": {
@@ -10,38 +10,23 @@
       "candidates": [{
         "picture": "images/hclinton.min.png",
         "name": "Hillary Clinton",
-        "percent": 39.0
+        "percent": 42.0,
+        "change": 3
       }, {
         "picture": "images/bsanders.min.png",
         "name": "Bernie Sanders",
-        "percent": 5.2
-      }, {
-        "picture": "images/jbiden.min.png",
-        "name": "Joe Biden",
-        "percent": 6.3,
-        "dropped": true
+        "percent": 5,
+        "change": -0.2
       }, {
         "picture": "images/momalley.min.png",
         "name": "Martin O'Malley",
-        "percent": 0.1
-      }, {
-        "picture": "images/llessig.min.png",
-        "name": "Lawrence Lessig",
-        "percent": 0.1
-      }, {
-        "picture": "images/lchafee.min.png",
-        "name": "Lincoln Chafee",
         "percent": 0,
-        "dropped": true
-      }, {
-        "picture": "images/jwebb.min.png",
-        "name": "Jim Webb",
-        "percent": 0.1,
-        "dropped": true
+        "change": -0.1
       }, {
         "picture": "images/other.min.png",
         "name": "Undecided Votes",
-        "percent": 7
+        "percent": 4.9,
+        "change": -2.1
       }]
     },
     "Republican": {
@@ -51,68 +36,60 @@
       "candidates": [{
         "picture": "images/dtrump.min.png",
         "name": "Donald Trump",
-        "percent": 20.1
+        "percent": 18,
+        "change": -1.9
       }, {
         "picture": "images/mhuckabee.min.png",
         "name": "Mike Huckabee",
-        "percent": 0.6
+        "percent": 1,
+        "change": 0.4
       }, {
         "picture": "images/bcarson.min.png",
         "name": "Ben Carson",
-        "percent": 6.1
+        "percent": 8,
+        "change": 1.9
       }, {
         "picture": "images/jbush.min.png",
         "name": "Jeb Bush",
-        "percent": 2.9
+        "percent": 5,
+        "change": 2.1
       }, {
         "picture": "images/mrubio.min.png",
         "name": "Marco Rubio",
-        "percent": 1.1
+        "percent": 1,
+        "change": -0.1
       }, {
         "picture": "images/tcruz.min.png",
         "name": "Ted Cruz",
-        "percent": 1.0
+        "percent": 1.0,
+        "change": 0
       }, {
         "picture": "images/cfiorina.min.png",
         "name": "Carly Fiorina",
-        "percent": 0.6
+        "percent": 0,
+        "change": -0.6
       }, {
         "picture": "images/rpaul.min.png",
         "name": "Rand Paul",
-        "percent": 0.5
+        "percent": 1,
+        "change": 0.5
       }, {
         "picture": "images/cchristie.min.png",
         "name": "Chris Christie",
-        "percent": 0.4
+        "percent": 1,
+        "change": 0.6
       }, {
         "picture": "images/jkasich.min.png",
         "name": "John Kasich",
-        "percent": 0.1
-      }, {
-        "picture": "images/jgilmore.min.png",
-        "name": "Jim Gilmore",
-        "percent": 0.1
-      }, {
-        "picture": "images/gpataki.min.png",
-        "name": "George Pataki",
-        "percent": 0
-      }, {
-        "picture": "images/rsantorum.min.png",
-        "name": "Rick Santorum",
-        "percent": 0.1
-      }, {
-        "picture": "images/lgraham.min.png",
-        "name": "Lindsey Graham",
-        "percent": 0.1
-      }, {
-        "picture": "images/bjindal.min.png",
-        "name": "Bobby Jindal",
-        "percent": 0
+        "percent": 0,
+        "change": -0.1
       }, {
         "picture": "images/other.min.png",
         "name": "Undecided Votes",
-        "percent": 3
+        "percent": 2.3,
+        "change": -0.7
       }]
     }
-  }
+  },
+  "independent": 9.2
 }

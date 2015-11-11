@@ -58,7 +58,6 @@ var PoliticalBeat = function() {
 
       if(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/.test(form.querySelector('.email').value)) {
         fetch('https://visitor2.constantcontact.com/api/signup', {
-        //fetch('http://laura-cowboy.codio.io:3000/', {
           method: 'post',
           body: new FormData(form)
         }).then(function(response) {
@@ -80,6 +79,18 @@ var PoliticalBeat = function() {
       }
     })
   })
+  
+  var scroll = document.getElementById('scroll-top');
+  scroll.onclick = function() {
+    window.scrollTo(0, 0);
+  }
+  window.onscroll = function() {
+    if(window.scrollY > 220) {
+      scroll.classList.add('active');
+    } else {
+      scroll.classList.remove('active');
+    }
+  }
 
 };
 var app = new PoliticalBeat();

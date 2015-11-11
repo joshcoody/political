@@ -4,6 +4,5 @@ app/js
 app/index.html
 favicon
 node_modules
-barchart.json
 chart.html
 source/css

@@ -7,7 +7,7 @@ module.exports = function(json) {
   title.innerHTML = json.title;
   var chartWrapper = document.createElement('div');
   chartWrapper.className = 'chart_wrapper';
-  chartWrapper.id = 'barChart_' + json.week;
+  chartWrapper.id = 'barChart_' + json.title.replace(/\s/g,'-') + '_' + json.week;
   elem.appendChild(title);
   elem.appendChild(chartWrapper);
   graphs.appendChild(elem);
@@ -86,7 +86,7 @@ module.exports = function(json) {
   title.innerHTML = json.title;
   var chartWrapper = document.createElement('div');
   chartWrapper.className = 'chart_wrapper';
-  chartWrapper.id = 'columnChart_' + json.week;
+  chartWrapper.id = 'columnChart_' + json.title.replace(/\s/g,'-') + '_' + json.week;
   elem.appendChild(title);
   elem.appendChild(chartWrapper);
   graphs.appendChild(elem);
@@ -161,7 +161,7 @@ module.exports = function (json) {
 
   var elem = document.createElement('div');
   elem.className = "leadingPolls";
-  elem.id = 'leadingPolls_' + json.week;
+  elem.id = 'leadingPolls_' + json.title.replace(/\s/g, '-') + '_' + json.week;
   graphs.appendChild(elem);
   var chart = "\n    <div class=\"title\">" + json.title + "</div>\n    <div class=\"columns\">\n  ";
   var categories = json.categories;
@@ -182,6 +182,11 @@ module.exports = function (json) {
       }
       chart += "\n        </div>\n      ";
     }
+
+    if (json.independent && category === 'Democratic') {
+      chart += "\n        <div class=\"independent\">\n          <span class=\"independent-percent\">" + json.independent + "%</span>\n          <span class=\"independent-text\">Independent Respondents<br>Selected Undecided</span>\n        </div>\n      ";
+    }
+
     chart += "\n      </div>\n    ";
   }
   chart += "\n    </div>\n  ";
@@ -287,7 +292,6 @@ var PoliticalBeat = function() {
 
       if(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/.test(form.querySelector('.email').value)) {
         fetch('https://visitor2.constantcontact.com/api/signup', {
-        //fetch('http://laura-cowboy.codio.io:3000/', {
           method: 'post',
           body: new FormData(form)
         }).then(function(response) {
@@ -309,6 +313,18 @@ var PoliticalBeat = function() {
       }
     })
   })
+  
+  var scroll = document.getElementById('scroll-top');
+  scroll.onclick = function() {
+    window.scrollTo(0, 0);
+  }
+  window.onscroll = function() {
+    if(window.scrollY > 220) {
+      scroll.classList.add('active');
+    } else {
+      scroll.classList.remove('active');
+    }
+  }
 
 };
 var app = new PoliticalBeat();
@@ -322,7 +338,7 @@ module.exports = function(json) {
   title.innerHTML = json.title;
   var chartWrapper = document.createElement('div');
   chartWrapper.className = 'chart_wrapper';
-  chartWrapper.id = 'pieChart_' + json.week;
+  chartWrapper.id = 'pieChart_' + json.title.replace(/\s/g,'-') + '_' + json.week;
   elem.appendChild(title);
   elem.appendChild(chartWrapper);
   graphs.appendChild(elem);
