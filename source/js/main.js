@@ -24,22 +24,32 @@ var PoliticalBeat = function() {
   viewButton.addEventListener('click', function() {
     self.load(archive.value + '/config').then(function(data) {
       self.updateDate();
-      var count = 0;
+      var combinedFile = [];
       for (var i = 0, len = data.types.length; i < len; i++) {
-        self.load(archive.value + '/' + data.types[i]).then(function(response) {
-          var html = '';
-          if(count === 0) {
-            html = '<div class="divider highlight"><img src="images/divider_icon_highlight.min.png"></div>';
-            html += '<div class="headline">Spotlight <span class="blue">Survey Poll</span></div>';
-          } else {
-            html = '<div class="divider"><img src="images/divider_icon.min.png"></div>';
-          }
-          graphs.insertAdjacentHTML( 'beforeend', html);
-          self[response.type](response);
-          count++;
-        }).catch(function(error) {
-          console.warn("File Not Found");
-        });
+        (function(i) {
+          self.load(archive.value + '/' + data.types[i]).then(function(response) {
+            var count = 0;
+            combinedFile[i] = response;
+            combinedFile.forEach(function() {
+              count++;
+            });
+            if(data.types.length === combinedFile.length && combinedFile.length === count) {
+              combinedFile.forEach(function(graph, index) {
+                var html = '';
+                if(index === 0) {
+                  html = '<div class="divider highlight"><img src="images/divider_icon_highlight.min.png"></div>';
+                  html += '<div class="headline">Spotlight <span class="blue">Survey Poll</span></div>';
+                } else {
+                  html = '<div class="divider"><img src="images/divider_icon.min.png"></div>';
+                }
+                graphs.insertAdjacentHTML( 'beforeend', html);
+                self[graph.type](graph);
+              });
+            }
+          }).catch(function(error) {
+            console.warn("File Not Found");
+          });
+        })(i);
       }
     }).catch(function(error) {
       console.warn("File Not Found");
@@ -79,7 +89,7 @@ var PoliticalBeat = function() {
       }
     })
   })
-  
+
   var scroll = document.getElementById('scroll-top');
   scroll.onclick = function() {
     window.scrollTo(0, 0);

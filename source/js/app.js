@@ -215,16 +215,16 @@ module.exports = function (json) {
 },{}],4:[function(require,module,exports){
 module.exports = function(file) {
   return new Promise(function(resolve, reject) {
-    if (localStorage[file]) resolve(JSON.parse(localStorage[file]));
+    //if (localStorage[file]) resolve(JSON.parse(localStorage[file]));
     fetch('./data/' + file + '.json').then(function(response) {
       return response.json();
     }).then(function(json) {
-      var tmp = localStorage[file];
-      localStorage[file] = JSON.stringify(json);
+      /*var tmp = localStorage[file];
+      localStorage[file] = JSON.stringify(json);*/
       resolve(json);
-      if (tmp !== JSON.stringify(json)) {
+      /*if (tmp !== JSON.stringify(json)) {
         update(json);
-      }
+      }*/
     }).catch(function(error) {
       reject(Error(error));
     });
@@ -258,22 +258,32 @@ var PoliticalBeat = function() {
   viewButton.addEventListener('click', function() {
     self.load(archive.value + '/config').then(function(data) {
       self.updateDate();
-      var count = 0;
+      var combinedFile = [];
       for (var i = 0, len = data.types.length; i < len; i++) {
-        self.load(archive.value + '/' + data.types[i]).then(function(response) {
-          var html = '';
-          if(count === 0) {
-            html = '<div class="divider highlight"><img src="images/divider_icon_highlight.min.png"></div>';
-            html += '<div class="headline">Spotlight <span class="blue">Survey Poll</span></div>';
-          } else {
-            html = '<div class="divider"><img src="images/divider_icon.min.png"></div>';
-          }
-          graphs.insertAdjacentHTML( 'beforeend', html);
-          self[response.type](response);
-          count++;
-        }).catch(function(error) {
-          console.warn("File Not Found");
-        });
+        (function(i) {
+          self.load(archive.value + '/' + data.types[i]).then(function(response) {
+            var count = 0;
+            combinedFile[i] = response;
+            combinedFile.forEach(function() {
+              count++;
+            });
+            if(data.types.length === combinedFile.length && combinedFile.length === count) {
+              combinedFile.forEach(function(graph, index) {
+                var html = '';
+                if(index === 0) {
+                  html = '<div class="divider highlight"><img src="images/divider_icon_highlight.min.png"></div>';
+                  html += '<div class="headline">Spotlight <span class="blue">Survey Poll</span></div>';
+                } else {
+                  html = '<div class="divider"><img src="images/divider_icon.min.png"></div>';
+                }
+                graphs.insertAdjacentHTML( 'beforeend', html);
+                self[graph.type](graph);
+              });
+            }
+          }).catch(function(error) {
+            console.warn("File Not Found");
+          });
+        })(i);
       }
     }).catch(function(error) {
       console.warn("File Not Found");
@@ -313,7 +323,7 @@ var PoliticalBeat = function() {
       }
     })
   })
-  
+
   var scroll = document.getElementById('scroll-top');
   scroll.onclick = function() {
     window.scrollTo(0, 0);
