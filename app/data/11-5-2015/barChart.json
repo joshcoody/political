@@ -1,7 +1,7 @@
 {
   "type": "barChart",
   "week": "11-5-2015",
-  "title": "Issues that matter to most voters overall",
+  "title": "Issues that matter most to voters",
   "categories": ["Economy", "Health Care", "Unemployment/Lack of Jobs", "Pro Choice/Pro Life", "Education", "Climate Change", "Social Security", "Foreign Policy/Terrorism", "Immigration", "Gun Control", "Other"],
   "labels": {
     "Democratic": {
