@@ -10,23 +10,23 @@
       "candidates": [{
         "picture": "images/hclinton.min.png",
         "name": "Hillary Clinton",
-        "percent": 42.0,
-        "change": 3
+        "percent": 41.7,
+        "change": 2.70
       }, {
         "picture": "images/bsanders.min.png",
         "name": "Bernie Sanders",
-        "percent": 5,
-        "change": -0.2
+        "percent": 5.3,
+        "change": 0.1
       }, {
         "picture": "images/momalley.min.png",
         "name": "Martin O'Malley",
-        "percent": 0,
-        "change": -0.1
+        "percent": 0.5,
+        "change": 0.4
       }, {
         "picture": "images/other.min.png",
         "name": "Undecided Votes",
         "percent": 4.9,
-        "change": -2.1
+        "change": -2.10
       }]
     },
     "Republican": {
@@ -36,53 +36,53 @@
       "candidates": [{
         "picture": "images/dtrump.min.png",
         "name": "Donald Trump",
-        "percent": 18,
+        "percent": 18.2,
         "change": -1.9
-      }, {
-        "picture": "images/mhuckabee.min.png",
-        "name": "Mike Huckabee",
-        "percent": 1,
-        "change": 0.4
       }, {
         "picture": "images/bcarson.min.png",
         "name": "Ben Carson",
-        "percent": 8,
-        "change": 1.9
+        "percent": 7.8,
+        "change": 1.7
       }, {
         "picture": "images/jbush.min.png",
         "name": "Jeb Bush",
-        "percent": 5,
-        "change": 2.1
+        "percent": 4.9,
+        "change": 2
       }, {
         "picture": "images/mrubio.min.png",
         "name": "Marco Rubio",
-        "percent": 1,
-        "change": -0.1
+        "percent": 1.4,
+        "change": 0.3
       }, {
         "picture": "images/tcruz.min.png",
         "name": "Ted Cruz",
-        "percent": 1.0,
-        "change": 0
-      }, {
-        "picture": "images/cfiorina.min.png",
-        "name": "Carly Fiorina",
-        "percent": 0,
-        "change": -0.6
-      }, {
-        "picture": "images/rpaul.min.png",
-        "name": "Rand Paul",
         "percent": 1,
-        "change": 0.5
+        "change": 0
       }, {
         "picture": "images/cchristie.min.png",
         "name": "Chris Christie",
-        "percent": 1,
-        "change": 0.6
+        "percent": 0.8,
+        "change": 0.4
+      }, {
+        "picture": "images/mhuckabee.min.png",
+        "name": "Mike Huckabee",
+        "percent": 0.7,
+        "change": 0.1
+      }, {
+        "picture": "images/rpaul.min.png",
+        "name": "Rand Paul",
+        "percent": 0.6,
+        "change": 0.1
+      }, {
+        "picture": "images/cfiorina.min.png",
+        "name": "Carly Fiorina",
+        "percent": 0.5,
+        "change": -0.1
       }, {
         "picture": "images/jkasich.min.png",
         "name": "John Kasich",
-        "percent": 0,
-        "change": -0.1
+        "percent": 0.4,
+        "change": 0.3
       }, {
         "picture": "images/other.min.png",
         "name": "Undecided Votes",

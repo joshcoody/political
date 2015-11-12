@@ -37,10 +37,10 @@ var PoliticalBeat = function() {
               combinedFile.forEach(function(graph, index) {
                 var html = '';
                 if(index === 0) {
-                  html = '<div class="divider highlight"><img src="images/divider_icon_highlight.min.png"></div>';
+                  html = '<div class="divider highlight"><img src="images/divider_icon_highlight.min.png" width="80" height="80"></div>';
                   html += '<div class="headline">Spotlight <span class="blue">Survey Poll</span></div>';
                 } else {
-                  html = '<div class="divider"><img src="images/divider_icon.min.png"></div>';
+                  html = '<div class="divider"><img src="images/divider_icon.min.png" width="70" height="69"></div>';
                 }
                 graphs.insertAdjacentHTML( 'beforeend', html);
                 self[graph.type](graph);

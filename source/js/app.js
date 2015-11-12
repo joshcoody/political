@@ -166,11 +166,11 @@ module.exports = function (json) {
   var chart = "\n    <div class=\"title\">" + json.title + "</div>\n    <div class=\"columns\">\n  ";
   var categories = json.categories;
   for (var category in categories) {
-    chart += "\n      <div class=\"column\" id=\"" + category + "\">\n        <div class=\"header\">\n          <div class=\"icon\"><img src=\"" + categories[category].icon + "\"></div>\n          <div class=\"text\">" + categories[category].header + "</div>\n        </div>";
+    chart += "\n      <div class=\"column\" id=\"" + category + "\">\n        <div class=\"header\">\n          <div class=\"icon\"><img src=\"" + categories[category].icon + "\" width=\"32\" height=\"32\"></div>\n          <div class=\"text\">" + categories[category].header + "</div>\n        </div>";
     var candidates = categories[category].candidates;
     for (var candidate in candidates) {
       var change = candidates[candidate].change;
-      chart += "\n        <div class=\"candidate " + (candidates[candidate].dropped ? 'dropped' : '') + "\">\n          <div class=\"picture\">\n            <img src=\"" + candidates[candidate].picture + "\">\n          </div>\n          <div class=\"name\">" + candidates[candidate].name + "</div>\n          <div class=\"percent\">\n            " + candidates[candidate].percent + "%\n          </div>";
+      chart += "\n        <div class=\"candidate " + (candidates[candidate].dropped ? 'dropped' : '') + "\">\n          <div class=\"picture\">\n            <img src=\"" + candidates[candidate].picture + "\" width=\"54\" height=\"54\" >\n          </div>\n          <div class=\"name\">" + candidates[candidate].name + "</div>\n          <div class=\"percent\">\n            " + candidates[candidate].percent + "%\n          </div>";
       if (change !== undefined) {
         chart += "\n          <div class=\"change " + (change > 0 ? 'green' : change < 0 ? 'red' : '') + "\">\n            <div class=\"arrow\">";
         if (change === 0) {
@@ -271,10 +271,10 @@ var PoliticalBeat = function() {
               combinedFile.forEach(function(graph, index) {
                 var html = '';
                 if(index === 0) {
-                  html = '<div class="divider highlight"><img src="images/divider_icon_highlight.min.png"></div>';
+                  html = '<div class="divider highlight"><img src="images/divider_icon_highlight.min.png" width="80" height="80"></div>';
                   html += '<div class="headline">Spotlight <span class="blue">Survey Poll</span></div>';
                 } else {
-                  html = '<div class="divider"><img src="images/divider_icon.min.png"></div>';
+                  html = '<div class="divider"><img src="images/divider_icon.min.png" width="70" height="69"></div>';
                 }
                 graphs.insertAdjacentHTML( 'beforeend', html);
                 self[graph.type](graph);

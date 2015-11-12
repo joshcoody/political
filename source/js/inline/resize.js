@@ -13,6 +13,8 @@ var resize = function() {
   }
 }
 window.addEventListener('resize', resize);
-var resize_event = document.createEvent('Event');
-resize_event.initEvent('resize', false, false);
-window.dispatchEvent(resize_event);
+setTimeout(function() {
+  var resize_event = document.createEvent('Event');
+  resize_event.initEvent('resize', false, false);
+  window.dispatchEvent(resize_event);
+}, 300);

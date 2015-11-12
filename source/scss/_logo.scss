@@ -12,7 +12,7 @@
   .text {
     color: #FFFFFF;
     display: inline-block;
-    font-size: 15pt;
+    font-size: 0;
     line-height: 1;
     text-align: left;
     text-transform: uppercase;
@@ -22,11 +22,12 @@
   }
   .large {
     font-family: 'Archivo Black', sans-serif;
+    font-size: 15pt;
     font-weight: 900;
   }
   .small {
     font-family: 'Lato', sans-serif;
-    font-size: 52%;
+    font-size: 10px;
     font-weight: 300;
     letter-spacing: 0.8pt;
     padding-top: 1.5pt;

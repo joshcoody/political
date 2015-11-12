@@ -12,14 +12,14 @@
         "name": "Hillary Clinton",
         "percent": 39.0
       }, {
-        "picture": "images/bsanders.min.png",
-        "name": "Bernie Sanders",
-        "percent": 5.2
-      }, {
         "picture": "images/jbiden.min.png",
         "name": "Joe Biden",
         "percent": 6.3,
         "dropped": true
+      }, {
+        "picture": "images/bsanders.min.png",
+        "name": "Bernie Sanders",
+        "percent": 5.2
       }, {
         "picture": "images/momalley.min.png",
         "name": "Martin O'Malley",
@@ -29,14 +29,14 @@
         "name": "Lawrence Lessig",
         "percent": 0.1
       }, {
-        "picture": "images/lchafee.min.png",
-        "name": "Lincoln Chafee",
-        "percent": 0,
-        "dropped": true
-      }, {
         "picture": "images/jwebb.min.png",
         "name": "Jim Webb",
         "percent": 0.1,
+        "dropped": true
+      }, {
+        "picture": "images/lchafee.min.png",
+        "name": "Lincoln Chafee",
+        "percent": 0,
         "dropped": true
       }, {
         "picture": "images/other.min.png",
@@ -53,10 +53,6 @@
         "name": "Donald Trump",
         "percent": 20.1
       }, {
-        "picture": "images/mhuckabee.min.png",
-        "name": "Mike Huckabee",
-        "percent": 0.6
-      }, {
         "picture": "images/bcarson.min.png",
         "name": "Ben Carson",
         "percent": 6.1
@@ -72,6 +68,10 @@
         "picture": "images/tcruz.min.png",
         "name": "Ted Cruz",
         "percent": 1.0
+      }, {
+        "picture": "images/mhuckabee.min.png",
+        "name": "Mike Huckabee",
+        "percent": 0.6
       }, {
         "picture": "images/cfiorina.min.png",
         "name": "Carly Fiorina",
@@ -93,10 +93,6 @@
         "name": "Jim Gilmore",
         "percent": 0.1
       }, {
-        "picture": "images/gpataki.min.png",
-        "name": "George Pataki",
-        "percent": 0
-      }, {
         "picture": "images/rsantorum.min.png",
         "name": "Rick Santorum",
         "percent": 0.1
@@ -104,6 +100,10 @@
         "picture": "images/lgraham.min.png",
         "name": "Lindsey Graham",
         "percent": 0.1
+      }, {
+        "picture": "images/gpataki.min.png",
+        "name": "George Pataki",
+        "percent": 0
       }, {
         "picture": "images/bjindal.min.png",
         "name": "Bobby Jindal",

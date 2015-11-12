@@ -13,7 +13,7 @@ module.exports = function(json) {
     chart += `
       <div class="column" id="${category}">
         <div class="header">
-          <div class="icon"><img src="${categories[category].icon}"></div>
+          <div class="icon"><img src="${categories[category].icon}" width="32" height="32"></div>
           <div class="text">${categories[category].header}</div>
         </div>`;
     var candidates = categories[category].candidates;
@@ -22,7 +22,7 @@ module.exports = function(json) {
       chart += `
         <div class="candidate ${candidates[candidate].dropped ? 'dropped' : ''}">
           <div class="picture">
-            <img src="${candidates[candidate].picture}">
+            <img src="${candidates[candidate].picture}" width="54" height="54" >
           </div>
           <div class="name">${candidates[candidate].name}</div>
           <div class="percent">

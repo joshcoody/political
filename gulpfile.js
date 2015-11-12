@@ -129,7 +129,7 @@ gulp.task('browserify', function() {
 
 gulp.task('js', ['babel', 'browserify'], function() {
   return gulp.src(files.js.source)
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(concat('app.js'))
     .pipe(rename({
       suffix: '.min'
