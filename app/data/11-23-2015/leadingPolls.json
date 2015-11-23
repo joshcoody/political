@@ -1,0 +1,95 @@
+{
+  "type": "leadingPolls",
+  "week": "11-23-2015",
+  "title": "Current Poll Numbers for Primary Nominations",
+  "categories": {
+    "Democratic": {
+      "header": "Democratic Candidates",
+      "icon": "images/democratic_icon.min.png",
+      "color": "#1b4f89",
+      "candidates": [{
+        "picture": "images/hclinton.min.png",
+        "name": "Hillary Clinton",
+        "percent": 40.7,
+        "change": -1.0
+      }, {
+        "picture": "images/bsanders.min.png",
+        "name": "Bernie Sanders",
+        "percent": 6.8,
+        "change": 1.5
+      }, {
+        "picture": "images/momalley.min.png",
+        "name": "Martin O'Malley",
+        "percent": 0.6,
+        "change": 0.1
+      }, {
+        "picture": "images/other.min.png",
+        "name": "Undecided Votes",
+        "percent": 4.6,
+        "change": -0.3
+      }]
+    },
+    "Republican": {
+      "header": "Republican Candidates",
+      "icon": "images/republican_icon.min.png",
+      "color": "#cf2630",
+      "candidates": [{
+        "picture": "images/dtrump.min.png",
+        "name": "Donald Trump",
+        "percent": 20.6,
+        "change": 2.4
+      }, {
+        "picture": "images/bcarson.min.png",
+        "name": "Ben Carson",
+        "percent": 5.7,
+        "change": -2.1
+      }, {
+        "picture": "images/jbush.min.png",
+        "name": "Jeb Bush",
+        "percent": 4.3,
+        "change": -0.6
+      }, {
+        "picture": "images/mrubio.min.png",
+        "name": "Marco Rubio",
+        "percent": 1.9,
+        "change": 0.5
+      }, {
+        "picture": "images/mhuckabee.min.png",
+        "name": "Mike Huckabee",
+        "percent": 1.0,
+        "change": 0.3
+      }, {
+        "picture": "images/tcruz.min.png",
+        "name": "Ted Cruz",
+        "percent": 0.8,
+        "change": -0.2
+      }, {
+        "picture": "images/cchristie.min.png",
+        "name": "Chris Christie",
+        "percent": 0.6,
+        "change": -0.2
+      }, {
+        "picture": "images/rpaul.min.png",
+        "name": "Rand Paul",
+        "percent": 0.6,
+        "change": 0
+      }, {
+        "picture": "images/cfiorina.min.png",
+        "name": "Carly Fiorina",
+        "percent": 0.4,
+        "change": -0.1
+      }, {
+        "picture": "images/jkasich.min.png",
+        "name": "John Kasich",
+        "percent": 0.3,
+        "change": 0.1
+      }, {
+        "picture": "images/other.min.png",
+        "name": "Undecided Votes",
+        "percent": 2.1,
+        "change": -0.2
+      }]
+    }
+  },
+  "independent": 9.0
+}

@@ -1,0 +1,17 @@
+{
+  "type": "pieChart",
+  "week": "11-23-2015",
+  "title": "After the recent paris terrorist attacks, we asked voters which candidate they believe best to protect america",
+  "labels": [
+    {
+      "color": "#d22229",
+      "name": "Donald Trump",
+      "percent": 38
+    },
+    {
+      "color": "#005492",
+      "name": "Hillary Clinton",
+      "percent": 62
+    }
+  ]
+}
