@@ -1,0 +1,17 @@
+{
+  "type": "pieChart",
+  "week": "12-11-2015",
+  "title": "Do you think the US should allow Syrian refugees to enter the country?",
+  "labels": [
+    {
+      "color": "#007A3D",
+      "name": "Yes",
+      "percent": 21.70
+    },
+    {
+      "color": "#000000",
+      "name": "No",
+      "percent": 78.30
+    }
+  ]
+}
