@@ -1,0 +1,20 @@
+{
+  "type": "barChart",
+  "week": "12-18-2015",
+  "title": "Issues that matter most to voters",
+  "categories": ["Economy", "Health Care", "Unemployment/Lack of Jobs", "Pro Choice/Pro Life", "Education", "Climate Change", "Social Security", "Foreign Policy/Terrorism", "Immigration", "Gun Control", "Other"],
+  "labels": {
+    "Democratic": {
+      "color": "#005492",
+      "data": [11, 12, 14, 3, 10, 5, 11, 11, 7, 12, 3]
+    },
+    "Independent": {
+      "color": "#3e505c",
+      "data": [11, 12, 13, 3, 9, 4, 11, 13, 9, 9, 6]
+    },
+    "Republican": {
+      "color": "#d22229",
+      "data": [12, 12, 12, 4, 8, 3, 11, 15, 12, 7, 4]
+    }
+  }
+}

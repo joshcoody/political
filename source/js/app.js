@@ -346,6 +346,17 @@ module.exports = function(json) {
   var title = document.createElement('div');
   title.className = 'title';
   title.innerHTML = json.title;
+  if (json.header) {
+    var header = document.createElement('div');
+    header.className = 'header';
+    if (json.header.image) {
+      var image = document.createElement('div');
+      image.className = 'image';
+      image.innerHTML = '<img src="' + json.header.image + '">';
+      header.appendChild(image);
+    }
+    elem.appendChild(header);
+  }
   var chartWrapper = document.createElement('div');
   chartWrapper.className = 'chart_wrapper';
   chartWrapper.id = 'pieChart_' + json.title.replace(/\s/g,'-') + '_' + json.week;

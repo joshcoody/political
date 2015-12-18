@@ -72,6 +72,18 @@ img {
   }
 }
 
+.header {
+  margin: 5pt auto;
+  max-width: 95%;
+  .image {
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+}
+
 #scroll-top {
   background: #d22229;
   bottom: 4%;

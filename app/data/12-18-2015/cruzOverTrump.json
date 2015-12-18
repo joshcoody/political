@@ -1,0 +1,20 @@
+{
+  "type": "pieChart",
+  "week": "12-18-2015",
+  "title": "Does Cruz have what it takes to \"trump\" Donald as the Republican candidate?",
+  "labels": [
+    {
+      "color": "#D22229",
+      "name": "Yes",
+      "percent": 47.33
+    },
+    {
+      "color": "#414141",
+      "name": "No",
+      "percent": 53.12
+    }
+  ],
+  "header": {
+    "image": "images/pollheaderimg.min.png"
+  }
+}
