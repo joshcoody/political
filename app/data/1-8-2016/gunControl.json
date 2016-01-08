@@ -1,0 +1,17 @@
+{
+  "type": "pieChart",
+  "week": "1-8-2016",
+  "title": "Does America need tighter gun control laws?",
+  "labels": [
+    {
+      "color": "#3a9544",
+      "name": "Yes",
+      "percent": 67.2
+    },
+    {
+      "color": "#5A5A5A",
+      "name": "No",
+      "percent": 32.8
+    }
+  ]
+}
