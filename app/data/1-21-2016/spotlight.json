@@ -1,0 +1,17 @@
+{
+  "type": "pieChart",
+  "week": "1-21-2016",
+  "title": "Who do you think will win the democratic primary elections?",
+  "labels": [
+    {
+      "color": "#005492",
+      "name": "Hillary Clinton",
+      "percent": 65
+    },
+    {
+      "color": "#7BADE0",
+      "name": "Bernie Sanders",
+      "percent": 35
+    }
+  ]
+}

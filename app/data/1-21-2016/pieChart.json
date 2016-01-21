@@ -1,0 +1,22 @@
+{
+  "type": "pieChart",
+  "week": "1-21-2016",
+  "title": "Americans who plan to vote in the upcoming General Election",
+  "labels": [
+    {
+      "color": "#005492",
+      "name": "Democratic",
+      "percent": 43
+    },
+    {
+      "color": "#3e505c",
+      "name": "Independent",
+      "percent": 36
+    },
+    {
+      "color": "#d22229",
+      "name": "Republican",
+      "percent": 21
+    }
+  ]
+}
